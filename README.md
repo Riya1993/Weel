@@ -1,16 +1,37 @@
-# Weel
-This is the test suite repo for Weel
+# Weel Automated Test Suite
 
-############################################################################################
-When working as a QA Engineer at Weel you will be required to write automated tests to check core functionality is working as expected. In this challenge you will be delivering a small test suite for our signup flow.
-You can access the first page of the signup flow here: https://app-moccona.letsweel.com/app/business-signup
+This repository contains a Selenium-based test suite designed to automate the testing of a web application's sign-up and login functionalities. The tests are written in Python and use Pytest as the testing framework.
 
-Your challenge is to write an automated test suite that tests for the following acceptance criteria:
-- The user should be able to enter a work email and valid password before pressing “Sign
-up with email” and navigating to the /personal-info page.
-- Each field should show an error message if they are unpopulated
-- The email field should only accept valid work emails.
-- You should not be able to sign up a user that you have already signed up.
-- If either the password or email don’t meet the requirements, error messages should
-show.
-##############################################################################################
+## Dependencies
+
+Before running the test suite, ensure you have the following installed on your machine:
+
+- Python 3.x
+- pip (Python package installer)
+- Google Chrome browser
+- ChromeDriver (compatible with your version of Chrome)
+
+## Running the Tests
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Riya1993/Weel.git
+   # You can also take code from master branch
+   cd test.py
+2. Install dependency:
+   ```bash
+   pip install -r requirements.txt
+3. If you don't have a requirements.txt, install the necessary packages directly:
+   ```bash
+   pip install selenium pytest
+4. Set Up ChromeDriver:
+Ensure ChromeDriver is in your system’s PATH, or specify the path in the script (already configured in the test script).
+5. Execute the test case using pytest:
+   ```bash
+   pytest test.py
+6. Test results will be displayed in pytest output.
+
+
+
+
+
